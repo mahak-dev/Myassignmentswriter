@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Myassignmentswriter</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Navbar-for-my-assignmentwriter.css">
+    <link rel="stylesheet" href="assets/css/Separator-with-icon.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team-Grid.css">
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+        
+        <b><a style="color: white;" class="navbar-brand" href="#"><span style="font-size: 33px;">M</span>yassignments<span style="font-size: 33px;">W</span>riter</a></b>
+        
+                <ul class="navbar-nav navbar-light navbar-right">
+            <li class="nav-item"><a style="color: white;" class="nav-link" href="#">Home</a></li>
+           
+            
+            <!--========-->
+            <li class="nav-item dropdown megamenu-li dmenu">
+                <a style="color: white;" class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                <div class="dropdown-menu megamenu sm-menu border-top" aria-labelledby="dropdown01">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3 border-right mb-4">
+                            <h6>Assignment Writing</h6>
+                            <a class="dropdown-item" href="#">All Assignment Help</a>
+                            <a class="dropdown-item" href="#">Best Assignment Helper</a>
+                            <a class="dropdown-item" href="#">Get Assignment Help</a>
+                            <a class="dropdown-item" href="#">Assignment Assiatance</a>
+                            <a class="dropdown-item" href="#">Visa Guide</a>
+                        </div>
+                       <div class="col-sm-6 col-lg-3 border-right mb-4">
+                            <h6>Essay</h6>
+                            <a class="dropdown-item" href="#">Research Essay</a>
+                            <a class="dropdown-item" href="#">Need Help Writing Essay</a>
+                            <a class="dropdown-item" href="#">Admission Essay</a>
+                            <a class="dropdown-item" href="#">Write My Essay</a>
+                            <a class="dropdown-item" href="#">Essay Writers Online</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 border-right mb-4">
+                            <h6>Dissertation</h6>
+                            <a class="dropdown-item" href="#">Dissertation Writing</a>
+                            <a class="dropdown-item" href="#">Dissertation Services</a>
+                            <a class="dropdown-item" href="#">Dissertation Experts</a>
+                           
+                        </div>
+                        <div class="col-sm-6 col-lg-3 mb-4">
+                            <h6>Thesis</h6>
+                            <a class="dropdown-item" href="#">Thesis Help</a>
+                            <a class="dropdown-item" href="#">Thesis Topics</a>
+                            
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-sm-6 col-lg-3 border-right mb-4">
+                            <h6>More...</h6>
+                            <a class="dropdown-item" href="#">Custom Writing</a>
+                            <a class="dropdown-item" href="#">Case Study</a>
+                            <a class="dropdown-item" href="#">Essay Editing</a>
+                            <a class="dropdown-item" href="#">Speech Writing</a>
+                            <a class="dropdown-item" href="#">Lab Report Writing</a>
+                            <a class="dropdown-item" href="#">Home Work</a>
+                            <a class="dropdown-item" href="#">World's No.1 Assignments</a>
+                        </div>
+                     </div>
+                </div>
+            </li>
+            <!--=========-->
+             <li class="nav-item"><a style="color: white;" class="nav-link" href="#">About</a></li>
+            
+            <li class="nav-item"><a style="color: white;" class="nav-link" href="<?php echo siteURL;?>contact-us.php">Contact</a></li>
+            
+            </ul>
+            
+        </div>
+    <button class="btn btn-primary btn-sm"type="button">FAQs</button>
+    </div>
+</nav>
+    <section background-image="assets/img/sleepingboy.jpg" style="background-image: url('assets/img/sleepingboy.jpg');background-size: cover;background-repeat: no-repeat;height: 100%;">
+        <div class="container"><br></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><br><br><br><br><br>
+                    <h3 style="color: rgb(255,255,255);font-size: 30px;"><strong>The expert paper composing administration for understudies who can't even.</strong></h3>
+                    <p style="color: rgb(255,255,255);"><strong>Get your exposition composed beginning at just $13.99 a page.</strong></p>
+                </div>
+                <div class="col-md-6" style="background: #ffffff;"><form method="POST" class="main-form">
+        <div>
+            <h3 style="margin-bottom: 0; ">Myassignmentswriter</h3>
+            <p style="margin-top: 0; ">
+                Fill in the details and get a quick assistance on your assignment.
+            </p>
+        </div>
+
+        <div class="flex-form">
+            <div>
+                <label  for="emailid">Enter your email id</label>
+                <input type="email" id="emailid" name="email" placeholder="Enter Email" />
+
+                <label  for="subjectcode">Your Subject / Course Code</label>
+                <input type="text" id="subjectcode" name="subjectcode" placeholder="Eg. UNCC100 Self & Community" />
+                <label  for="deadline">Deadline</label>
+                <input type="datetime-local" id="deadline" name="deadline" />
+            </div>
+            <div>
+                <label  for>No. of Pages/ Words</label>
+                <br />
+                <div class="value-button" id="decrease" style="margin-left: 0px" onclick="decreaseValue()"
+                    value="Decrease Value">
+                    -
+                </div>
+                <input type="number" id="number" value="1" />
+
+                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">
+                    +
+                </div>
+                <p id="words" style="margin-top: 0px; ">250 words</p>
+
+                <br />
+                <label  for="message">Enter Assignment Description</label>
+                <textarea id="message" rows="3"></textarea>
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="file-input">
+                <div>
+                    <input type="file" id="file" class="file" />
+                    <label  for="file"> Attach file </label>
+                </div>
+                <p class="file-name"></p>
+            </div>
+
+            <input type="button" value="Free Assistance" id="submit" />
+        </div>
+    </form>
+
+<style>
+
+.main-form {
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+select,
+textarea {
+  width: 100%;
+  height: 15%;
+  padding: 10px 20px;
+  margin: 7px 0;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+.value-button {
+  display: inline-block;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input,
+textarea {
+  border: 0.5px solid lightgrey;
+}
+.value-button:hover {
+  cursor: pointer;
+}
+
+.main-form #decrease {
+  margin-right: -4px;
+  background-color: #eee;
+  color: black;
+  height: 40px;
+  width: 40px;
+
+  border-radius: 8px 0 0 8px;
+}
+
+.main-form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+  color: black;
+  width: 40px;
+  height: 40px;
+
+  background-color: #eee;
+}
+
+.main-form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  background-color: lightcyan;
+  border: none;
+  margin: 20px 0px;
+  width: 40px;
+
+  height: 40px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* File Input */
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+.file-input {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.file-input label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b6b6b6;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+  margin: 0px;
+}
+
+.file-name {
+  font-size: 0.85rem;
+  color: #ffff;
+  margin-top: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#submit {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #1895de;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.flex-form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-form div{
+  width: 48%;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .file-input label {
+    font-size: 0.8rem;
+  }
+  .file-name {
+    font-size: 0.5rem;
+    margin-bottom: 0;
+  }
+  .main-form {
+    padding: 1.5rem;
+  }
+  .main-form h3 {
+    font-size: 1rem;
+  }
+  .main-form p:first-child {
+    font-size: 0.8rem;
+  }
+
+  .flex-form{
+    flex-direction: column;
+      
+  }
+
+  .flex-form div{
+    width: 98%;
+  }  
+}
+
+</style>
+
+<script>
+    const words = document.querySelector("#words");
+const email = document.querySelector("#emailid");
+const subjectCode = document.querySelector("#subjectcode");
+const message = document.querySelector("#message");
+const submit = document.querySelector("#submit");
+
+submit.addEventListener("click", () => {
+  console.log("Sending data...");
+  sendData();
+});
+
+function increaseValue() {
+  var value = parseInt(document.getElementById("number").value, 10);
+  value = isNaN(value) ? 1 : value;
+  value++;
+  document.getElementById("number").value = value;
+  words.textContent = `${value * 250} words`;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById("number").value, 10);
+  value = isNaN(value) ? 1 : value;
+  value < 1 ? (value = 1) : "";
+  value--;
+  document.getElementById("number").value = value;
+  words.textContent = `${value * 250} words`;
+}
+
+const file = document.querySelector("#file");
+file.addEventListener("change", (e) => {
+  // Get the selected file
+  const [file] = e.target.files;
+  // Get the file name and size
+  const { name: fileName, size } = file;
+  // Convert size in bytes to kilo bytes
+  const fileSize = (size / 1000).toFixed(2);
+  // Set the text content
+  const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+  document.querySelector(".file-name").textContent = fileNameAndSize;
+});
+
+function sendData() {
+  let formData = {
+    email: email.value,
+    subjectCode: subjectCode.value,
+    message: message.value,
+  };
+
+  let xhr = new XMLHttpRequest();
+  // xhr.open("POST", "https://asmt-server.herokuapp.com/mail");
+  xhr.open("POST", "http://localhost:5000/mail");
+
+  xhr.setRequestHeader("content-type", "application/json");
+  xhr.onload = function () {
+    console.log(xhr.responseText);
+    if (xhr.responseText == "success") {
+      alert("Email Sent Successfully");
+      email.value = "";
+      subjectCode.value = "";
+      message.value = "";
+    } else {
+      alert("Something Went wrong");
+    }
+  };
+  xhr.send(JSON.stringify(formData));
+}
+</script></div>
+            </div>
+        </div>
+        <div class="container"><br></div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;"><br>
+                    <h1>Assignment Help Services<br></h1>
+                    <div class="text-center icon-separator" style="color: rgb(0, 63, 127);">
+                        <div style="width: 175px;"></div><i class="fas fa-address-card"></i>
+                        <div style="width: 175px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3" data-bss-hover-animate="pulse">
+                    <h1 style="text-align: center;"><img src="assets/img/img%203.jpg" style="width: 150px;"></h1>
+                    <h4>Assignment help<br></h4>
+                    <p style="font-size: 16px;">Myassignmentswriter.com is a one-stop answer for all critical task help needs. We have the best task essayists from Australia for all your scholarly necessities. Our paper and task specialists have incredible ability recorded as a hard copy tasks. Teachers, educators and industry specialists give immaculate composing administrations across the globe to understudies from K-12 to Ph.D. level.<br></p>
+                </div>
+                <div class="col-md-3" data-bss-hover-animate="pulse">
+                    <h1 style="text-align: center;"><img src="assets/img/img%202.jpg" style="width: 150px;"></h1>
+                    <h4>Essay help<br></h4>
+                    <p style="font-size: 16px;">As a paper assist with overhauling supplier, Myassignmentswriter.com not just guides understudies to accomplish scholarly greatness by giving custom composing help yet in addition gain valuable information from the subject specialists. Our group of article task assistants will ensure that each request is composed without any preparation, giving each understudy a quality custom paper and followed through on schedule.<br></p>
+                </div>
+                <div class="col-md-3" data-bss-hover-animate="pulse">
+                    <h1 style="text-align: center;"><img src="assets/img/img%201.jpeg" style="width: 150px;"></h1>
+                    <h4>Dissertation help<br></h4>
+                    <p style="font-size: 16px;">Specialists, at Myassignmentswriter.com, are equipped for conveying expositions using both essential and auxiliary exploration. We comprehend that each course has various prerequisites as far as examination procedures. This is the explanation we appoint subject-explicit specialists who can give you the best thought on whether quantitative and subjective exploration is fitting for you.<br></p>
+                </div>
+                <div class="col-md-3" data-bss-hover-animate="pulse">
+                    <h1 style="text-align: center;"><img src="assets/img/img%204.jpeg" style="width: 150px;height: 93.75px;"></h1>
+                    <h4>More Services<br></h4>
+                    <p style="font-size: 16px;">We at Myassignmentswriter offer a wide range of online scholarly administrations, be it schoolwork help, coursework help, contextual analysis help, proposal/research paper composing help and online test help. What's more, for each help, each subject and every point, we devote a master author who has information in that particular field of study. Experience flawless scholastic composing administration more than ever.<br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col-md-3"><a class="btn btn-primary" role="button" data-bss-hover-animate="tada">Learn more</a></div>
+                <div class="col-md-3"><a class="btn btn-primary" role="button" data-bss-hover-animate="tada">Learn more</a></div>
+                <div class="col-md-3"><a class="btn btn-primary" role="button" data-bss-hover-animate="tada">Learn more</a></div>
+                <div class="col-md-3"><a class="btn btn-primary" role="button" data-bss-hover-animate="tada">Learn more</a></div>
+            </div>
+        </div><br>
+    </section>
+    <section><br>
+        <div class="container">
+            <div class="col" style="text-align: center;">
+                <h1>Online Educational Assistance<br></h1>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col">
+                            <h5><img src="assets/img/img%205.jpeg" style="width: 135px;">&nbsp;Mention to us what you need<br></h5>
+                            <p>Visit our site and give every one of the subtleties by topping off the request structure. Assuming you need tweaked task arrangements, you can converse with our help group and notice your necessities.<br></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5><img src="assets/img/img%206.jpeg" style="width: 135px;">&nbsp;Pay for assignment<br></h5>
+                            <p>When you&nbsp;present the request structure, you will get a statement for your task. You can&nbsp;decide to pay for your request through PayPal, charge/Visas or net banking. Following the culmination of the installment, you will get an email or text that will affirm your request.<br></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5><img src="assets/img/img%207.jpeg" style="width: 135px;">&nbsp;Get complete solution<br></h5>
+                            <p>Our task&nbsp;assist specialists with beginning composing the papers when the installment is&nbsp;finished. The essayists work quick to finish the job inside the cut-off time.&nbsp;You will accept your task in your enrolled account before the accommodation&nbsp;cut-off time.<br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="text-align: center;"><br><br><br><br><br><img data-bss-hover-animate="pulse" src="assets/img/img%208.jpeg" style="width: 360px;"></div>
+            </div>
+        </div>
+    </section>
+    <section style="background: #ccd5f5;"><br>
+        <div class="container" style="text-align: center;">
+            <h2>My Assignments Writers : THE ESSAY WRITING SERVICE YOU CAN TRUST</h2>
+            <p>At times things simply don't go as arranged. You miss cutoff times, invest a lot of energy on research, can't concoct an intriguing subject, or have no an ideal opportunity to appropriately alter&nbsp; the&nbsp;&nbsp;text before accommodation. myassignmentswriter online exposition composing administration was made to kill such issues and help understudies with their scholastic exhibition! We have assembled just the most talented article authors who give unique, custom papers for any instructive level. Experienced editors group will guarantee the exposition is counterfeiting free.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Sorts of essays we do</h4>
+                    <p>Proficient group of specialists in different subjects can deal with any scholarly article, including however not restricted to insightful, think about and contrast, account, explanatory, pugnacious, powerful, expressive, etc. In addition, there are experts who'll readily deal with your law contextual analysis, nursing report, or history show. Try not to stop for a second to demand help as we have scholars for an assortment of subjects who are ready to deal with your paper for Geography, International Law, Sociology, Philosophy, Culture, Ethics, and different classes.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Reasonable prices</h4>
+                    <p>In correlation with other exposition composing administrations, our organization thinks often about its customers and offers top types of assistance that will fit any spending plan. We realize how troublesome it could be for an understudy to bring in or set aside money, so costs start at just $13.99 per page. That is the reason we have numerous normal clients who utilize our assistance continually. Myassignmentswriter mission is to make online article administration moderate.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Who will write your essay</h4>
+                    <p>Basically, anyone can apply for a position to become a writer in our custom essay writing service, but first of all, they should pass all hiring steps which help prove their knowledge and skills. Most editors are native speakers who hold Masters and Ph.D. degrees from American universities. They all were students at some point in their life and understand all struggles of keeping up with a schedule. Being experts in different subjects, they create only free-from-plagiarism content and are aware of relevant academic rules. myassignmentswriter aims at keeping the bar of excellence high and standing by acquired standards. To achieve it, we hire writers who possess the following qualities:<br>1.&nbsp;&nbsp;Excellent written &amp; spoken English<br>2.&nbsp;&nbsp;Punctuality &amp; discipline<br>3.&nbsp;&nbsp;Ability to follow guidelines to the dot<br>4.&nbsp;&nbsp;Good interpersonal communication skills<br>Experienced in academic writing, editing, formatting Our best paper writing service provides every client with a unique opportunity to choose a preferred writer. All of them have their own profiles with descriptions of their skills, education, number of completed orders, and client’s feedback. Another peculiarity is communication with the writer directly, as we believe cooperation helps in achieving better results.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Creative cycle in a nutshell</h4>
+                    <p>Essayists at myassignmentswriter are given to what they do and have an inbuilt course of finishing any request. Here's the manner by which the creative cycle is normally coordinated: <br>Subsequent to tolerating your venture, the essayist really looks at all guidelines, guaranteeing nothing significant was missed. <br>1. They get to know the point - do explore on the Internet, discover academic sources from solid data sets, read them completely, and make notes. <br>2. Scholars make a framework alongside the postulation for themselves, so the last paper is coordinated, smooth, and has a stream. <br>3. Following stage is drafting paper without any preparation, executing sources, consolidating proof. You might request a draft by informing a specialist, really looking at it or giving a few remarks to progress. <br>Toward the end, the author creates the last variation, refers to every single utilized source, edits, and alters the text prior to conveying it. In case you are not happy with your task for reasons unknown, there is a chance to demand free limitless modifications or ask one more supervisor for upgrades. Then again, as per our consumer loyalty strategy, you might demand a discount on the off chance that you think guidelines were not followed.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Instructions to place an order</h4>
+                    <p>Myassignmentswriter is an expert article composing administration that thinks often about the nature of each paper conveyed to our customers. On the off chance that you take a stab at fantastic outcomes, give however much data about your paper as could reasonably be expected to get the best composing administrations. Reveal to us the paper title, number of pages, cutoff time, arranging style, and number of hotspots for reference. Be mindful, join full necessities from your school teacher or reorder them into the request structure. Ideally, send your scoring rubric, address notes or introductions, course books, or some other helpful materials. At this stage, a ton relies upon you just as collaboration with your own composing collaborator. Try not to spare a moment over sending rules after the request was put. Slow on the uptake, but still good enough!</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>How we achieve quality</h4>
+                    <p>Consumer loyalty is our need, and we work every day on the improvement of custom article composing. We ensure that main the most appropriate and experienced author will deal with your request. Your guidelines will be followed precisely, all subtleties notwithstanding. Editors will edit each sentence, fix errors, right language or lexical missteps. Have no questions as just most innovative instruments are utilized to examine all texts for copyright infringement to guarantee 100% inventiveness of every task. We use just tenable insightful materials for supporting contentions in the paper. Moreover, in-house specialists twofold really look at the paper's consistence with beginning rules, designing, alongside in-text references. Each request is under severe control of our expert article composing group.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section><br>
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col-md-4">
+                    <h1 style="color: rgb(0, 63, 127);">4,368</h1>
+                    <p style="font-size: 24px;"><strong>EXPERTS</strong><br></p>
+                </div>
+                <div class="col-md-4">
+                    <h1 style="color: rgb(0, 63, 127);">4.8/5</h1>
+                    <p style="font-size: 24px;"><strong>CLIENT RATING</strong><br></p>
+                </div>
+                <div class="col-md-4">
+                    <h1 style="color: rgb(0, 63, 127);">4,98,761</h1>
+                    <p style="font-size: 24px;"><strong>DELIVERED ORDERS</strong><br></p>
+                </div>
+            </div>
+            <div class="row" style="text-align: center;">
+                <div class="col-md-12">
+                    <h5 style="color: rgb(0, 63, 127);">Recruit Myassignmentswriter.com Expert Assignment Writer And See The Difference In Your Grade</h5>
+                    <p>Myassignmentswriter.com being one of the most dynamic task help sites has a pool of more than 5,143 task specialists from Australia, UK and US. They are exceptionally qualified and gifted proficient scholars who have immense involvement with composing tasks, expositions, papers, research papers, research projects and so on Every master is picked after thorough testing and needs to demonstrate his scholarly certifications.</p><a class="btn btn-primary btn-sm" role="button">Hire An Expert</a>
+                </div>
+            </div>
+        </div><br>
+    </section>
+    <section class="team-grid">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center" style="height: 44.4px;">Premium&nbsp;<span style="color: rgb(26,101,177);">Writers<br></span></h2>
+                <p class="text-center" style="font-size: 24px;"><strong>WE HAVE HIGHLY QUALIFIED WRITERS </strong></p>
+            </div>
+            <div class="row people">
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image: url(assets/img/Writer1.jpeg);">
+                        <div class="cover">
+                            <h3 class="name">Ben Johnson</h3>
+                            <p class="title">The board (Florence) <br>Specialists in Management and money</p>
+                            <div class="social"><a class="btn btn-primary btn-sm" role="button" style="background: rgb(0, 63, 127);">Hire Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image: url(assets/img/Writer2.jpeg);">
+                        <div class="cover">
+                            <h3 class="name">Emily Clark</h3>
+                            <p class="title">Specialized (Berlin) <br>Master in Technical Assignments</p>
+                            <div class="social"><a class="btn btn-primary btn-sm" role="button" style="background: rgb(0, 63, 127);">Hire Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image: url(assets/img/Writer3.jpeg);">
+                        <div class="cover">
+                            <h3 class="name">Carl Kent</h3>
+                            <p class="title">Thesis (Philadelphia) <br>Thesis Writing Expert</p>
+                            <div class="social"><a class="btn btn-primary btn-sm" role="button" style="background: rgb(0, 63, 127);">Hire Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image: url(assets/img/Writer4.jpeg);">
+                        <div class="cover">
+                            <h3 class="name">Felicia Adams</h3>
+                            <p class="title">Exposition Writing (Newcastle) <br>Exposition Writing and Blogging content</p>
+                            <div class="social"><a class="btn btn-primary btn-sm" role="button" style="background: rgb(0, 63, 127);">Hire Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container" style="text-align: center;">
+        <h1>Customer&nbsp;<span style="color: rgb(26,101,177);">Testimonials<br></span></h1>
+        <p style="font-size: 25px;">Understudy Opinion</p>
+    </div>
+    <section style="background: #353844;">
+        <div class="container" data-bss-hover-animate="shake"><head>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<div style="color:white;"class="col-lg-10 offset-lg-1 pt-5 pb-5 bg-dark text-light">
+  <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel" style="height:200px;">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active text-center p-4">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0"><i class="fa fa-quote-left"></i> Exceptionally educated master, sensible cost. Extraordinary at clarifying hard shows!
+          </p>
+          <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
+          <!-- Client review stars -->
+          <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+          <p class="client-review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </p>
+        </blockquote>
+      </div>
+      <div class="carousel-item text-center p-4">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0"><i class="fa fa-quote-left"></i>Assisted me with bear and positively trending markets just before my test! Quick educator. Would work with Grace once more.
+          </p>
+          <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
+          <!-- Client review stars -->
+          <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+          <p class="client-review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+        </blockquote>
+      </div>
+      <div class="carousel-item text-center p-4">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0"><i class="fa fa-quote-left"></i>In the event that you are filtering surveys attempting to track down an extraordinary coaching administration, check no more. This help tip top!
+          </p>
+          <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
+          <!-- Client review stars -->
+          <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+          <p class="client-review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <ol class="carousel-indicators">
+      <li data-target="#client-testimonial-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#client-testimonial-carousel" data-slide-to="1"></li>
+      <li data-target="#client-testimonial-carousel" data-slide-to="2"></li>
+    </ol>
+  </div>
+</div></div>
+    </section>
+    <div class="container">
+        <h1 style="text-align: center;color: rgb(26,101,177);">Company</h1>
+        <p style="text-align: center;font-size: 21px;"><a href="#" style="color: rgb(0,0,0);">How it works</a>&nbsp; |&nbsp;&nbsp;<a href="#" style="color: rgb(0,0,0);">About</a>&nbsp; |&nbsp;&nbsp;<a href="#" style="color: rgb(0,0,0);">Terms of use</a>&nbsp; |&nbsp;&nbsp;<a href="#" style="color: rgb(0,0,0);">Privacy policy</a></p>
+    </div>
+    <section>
+        <section style="background: #243ab3;"><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4 style="color: rgb(255,255,255);">The Services will be useful for :-</h4>
+                        <p style="color: rgb(0,255,255);">Myassignmentswriter are NOT expected to be sent as finished work as it is simply rigorously intended to be utilized for exploration and study purposes. Myassignmentswriter doesn't underwrite or overlook any kind of literary theft.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 style="color: rgb(255,255,255);">About us:</h4>
+                        <p style="height: 10px;"><a href="#" style="color: rgb(0,255,255);font-size: 14px;">How it works?</a></p>
+                        <p style="height: 10px;"><a href="#" style="color: rgb(0,255,255);font-size: 14px;">Testimonials</a></p>
+                        <p style="height: 10px;"><a href="#" style="color: rgb(0,255,255);font-size: 14px;">Contact Support</a></p>
+                        <p style="height: 10px;"><a href="#" style="color: rgb(0,255,255);font-size: 14px;">FAQs</a></p>
+                        <p style="height: 10px;"><a href="#" style="color: rgb(0,255,255);font-size: 14px;">Write for Myassignmentswriter</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 style="color: rgb(255,255,255);">Tools:</h4>
+                        <p style="height: 10px;"><a href="#" style="color: rgb(0,255,255);font-size: 14px;">Essay Writing Tool</a></p>
+                        <p style="height: 10px;"><a href="#" style="color: rgb(0,255,255);font-size: 14px;">Academic Essay Writing</a></p>
+                        <p style="height: 10px;"><a href="#" style="color: rgb(0,255,255);font-size: 14px;">Plagiarism Tool</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 style="color: rgb(255,255,255);">Contact Us:</h4>
+                        <p style="height: 10px;"><a href="#" style="color: rgb(0,255,255);font-size: 14px;"><i class="far fa-envelope"></i>&nbsp; support@myassignmentswriter.com</a></p>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <h4 style="color: rgb(255,255,255);">Follow Us:</h4>
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <h4 style="color: rgb(255,255,255);">We accept:</h4>
+                        <p style="color: rgb(255,255,255);"><i class="fa fa-cc-visa" style="font-size: 26px;"></i>&nbsp;&nbsp;<i class="fa fa-cc-mastercard" style="font-size: 26px;"></i>&nbsp;&nbsp;<i class="fa fa-cc-amex" style="font-size: 26px;"></i>&nbsp;&nbsp;<i class="fa fa-cc-paypal" style="font-size: 26px;"></i>&nbsp;&nbsp;<i class="fa fa-cc-discover" style="font-size: 26px;"></i></p>
+                    </div>
+                    <div class="col-md-12"></div>
+                </div>
+            </div>
+        </section>
+        <section style="background: #2929ae;">
+            <div class="container"><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p style="color: rgb(180,180,180);font-size: 12px;height: 18.2px;">2021 ©&nbsp;Myassignmentswriter.com All rights reserved<br><br></p>
+                        <p style="color: rgb(111,171,231);"><a href="#" style="color: rgb(0,255,255);">Privacy Policy</a>&nbsp; |&nbsp;&nbsp;<a href="#" style="color: rgb(0,255,255);">Terms of use</a>&nbsp; |&nbsp;&nbsp;<a href="#" style="color: rgb(0,255,255);">Fair use Policy</a><br></p>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <h5 style="color: rgb(255,255,255);">Local site :&nbsp;<img class="rounded img-fluid" src="assets/img/America%20flag.jpeg" style="width: 42px;">&nbsp;</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+</body>
+
+</html>
